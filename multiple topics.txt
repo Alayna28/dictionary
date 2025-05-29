@@ -1,0 +1,92 @@
+s1 = [
+
+{"id" : "1",
+
+"name" : "sam",
+
+"class" : 10,
+
+"subject" : "Math"},
+
+
+{"id" : "2",
+
+"name" : "daisy",
+
+"class" : 10,
+
+"subject" : "Computer"},
+
+
+{"id" : "1",
+
+"name" : "sam",
+
+"class" : 10,
+
+"subject" : "Math"}
+
+]
+unique = []
+for student in s1:
+  if student not in unique:
+    unique.append(student)
+
+for student in unique:
+  print(student)
+
+
+
+
+
+
+
+
+"""
+s1 = [
+
+{"id" : "1",
+
+"name" : "sam",
+
+"class" : 10,
+
+"subject" : "Math"},
+
+
+{"id" : "2",
+
+"name" : "daisy",
+
+"class" : 10,
+
+"subject" : "Computer"},
+
+
+{"id" : "1",
+
+"name" : "sam",
+
+"class" : 10,
+
+"subject" : "Math"}
+
+]
+unique = []
+for student in s1:
+  if student not in unique:
+    unique.append(student)
+
+for student in unique:
+  print(student)
+"""
+fruits = ["apple", "banana", "cherry", "apple", "banana"]
+d1 = {}
+for fruits in fruits:
+  if fruits in d1:
+    d1[fruits] += 1
+  else:
+    d1[fruits] = 1
+
+for k,v in d1.items():
+  print(f"{k} : {v}")
